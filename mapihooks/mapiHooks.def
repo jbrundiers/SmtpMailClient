@@ -1,0 +1,7 @@
+; VNCHooks.def : Declares the module parameters for the DLL.
+
+LIBRARY      "mapiHooks"
+; DESCRIPTION  'mapiHook Library'
+
+;SECTIONS
+;	.SharedData read write shared
