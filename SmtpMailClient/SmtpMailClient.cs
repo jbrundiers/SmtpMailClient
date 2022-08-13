@@ -215,7 +215,7 @@ namespace SmtpMailClient
                 } // end using
 
 
-                MessageBox.Show(this, Resources.RES_ID_MailSend, "Smtp Mail Client", MessageBoxButtons.OK, MessageBoxIcon.Information); //MLHIDE
+                MessageBox.Show(this, Resources.RES_ID_MailSent, "Smtp Mail Client", MessageBoxButtons.OK, MessageBoxIcon.Information); //MLHIDE
 
                 // if called via commandline close application
                 if (  Environment.GetCommandLineArgs().Length > 1 )

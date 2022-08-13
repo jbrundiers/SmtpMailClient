@@ -126,8 +126,8 @@
   <data name="RES_ID_CultureChange" xml:space="preserve">
     <value>The language change will take full effect the next time you start the program.</value>
   </data>
-  <data name="RES_ID_MailSend" xml:space="preserve">
-    <value>E-Mail send</value>
+  <data name="RES_ID_MailSent" xml:space="preserve">
+    <value>E-Mail sent</value>
   </data>
   <data name="RES_ID_MailSize" xml:space="preserve">
     <value>    Mail size: </value>

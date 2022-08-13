@@ -140,9 +140,9 @@ namespace SmtpMailClient.Properties {
         /// <summary>
         ///   Looks up a localized string similar to E-Mail send.
         /// </summary>
-        public static string RES_ID_MailSend {
+        public static string RES_ID_MailSent {
             get {
-                return ResourceManager.GetString("RES_ID_MailSend", resourceCulture);
+                return ResourceManager.GetString("RES_ID_MailSent", resourceCulture);
             }
         }
         

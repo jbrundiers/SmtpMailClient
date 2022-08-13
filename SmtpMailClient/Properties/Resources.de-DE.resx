@@ -126,7 +126,7 @@
   <data name="RES_ID_CultureChange" xml:space="preserve">
     <value>Die Sprachänderung wird erst beim nächsten Start wirksam.</value>
   </data>
-  <data name="RES_ID_MailSend" xml:space="preserve">
+  <data name="RES_ID_MailSent" xml:space="preserve">
     <value>E-Mail versendet</value>
   </data>
   <data name="RES_ID_MailSize" xml:space="preserve">

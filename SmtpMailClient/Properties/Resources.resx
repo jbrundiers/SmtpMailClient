@@ -123,7 +123,7 @@
   <data name="RES_ID_Computername" xml:space="preserve">
     <value>Computername: </value>
   </data>
-  <data name="RES_ID_MailSend" xml:space="preserve">
+  <data name="RES_ID_MailSent" xml:space="preserve">
     <value>E-Mail send</value>
   </data>
   <data name="RES_ID_MailSize" xml:space="preserve">
