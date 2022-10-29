@@ -30,12 +30,9 @@ using System.Windows.Forms;
 using System.Text.RegularExpressions;
 using System.Collections;
 using System.IO;
-using System.IO.IsolatedStorage;
-using System.Runtime.Serialization;
-using System.Runtime.Serialization.Formatters.Binary;
-using System.Threading;
-using System.Net.Mail;
-using System.Net.Mime;
+using MailKit.Net.Smtp;
+using MailKit;
+using MimeKit;
 using System.Net;
 using System.Net.Sockets;
 using System.Reflection;
@@ -170,47 +167,46 @@ namespace SmtpMailClient
                 // MailMessage is used to represent the e-mail being sent
                 // using statement ensures that Dispose is called even if an 
                 // exception occurs while you are calling methods on the object.
-                using ( MailMessage message = new MailMessage() )
+                using ( MimeMessage message = new MimeMessage() )
                 {
-                    message.From = new MailAddress(Properties.Settings.Default.FromUser);
+                    message.From.Add ( new MailboxAddress("Sender",Properties.Settings.Default.FromUser));
 
                     // loop through all receivers
                     // correct syntax has been checked before
                     string[] singleAddress = this.cbReceiver.Text.Split(',');
                     for (int i = 0; i < singleAddress.GetLength(0); i++)
-                        message.To.Add(singleAddress[i]);
+                        message.To.Add(new MailboxAddress("Receiver", singleAddress[i]));
                     
                     message.Subject = this.tbSubject.Text;
 
-                    message.Body = tbMailMessage.Text;
-                    
+                    var builder = new BodyBuilder();
+
+                    // Set the plain-text version of the message text
+                    builder.TextBody = tbMailMessage.Text ;
+
+
+
                     // loop through all attachments
                     foreach (string filename in Attachments)
                     {
-                        Attachment fileData = new Attachment(filename, MediaTypeNames.Application.Octet);
-                    
-                        // Add time stamp information for the file.
-                        ContentDisposition disposition = fileData.ContentDisposition;
-                        disposition.CreationDate = System.IO.File.GetCreationTime(filename);
-                        disposition.ModificationDate = System.IO.File.GetLastWriteTime(filename);
-                        disposition.ReadDate = System.IO.File.GetLastAccessTime(filename);
-
                         // Add the file attachment to this e-mail message.
-                        message.Attachments.Add(fileData);
+                        builder.Attachments.Add(filename);
                     }
 
+                    // Now we just need to set the message body and we're done
+                    message.Body = builder.ToMessageBody();
+
                     // SmtpClient is used to send the e-mail
-                    SmtpClient mailClient = new SmtpClient(Properties.Settings.Default.SmtpServer, Convert.ToInt32(Properties.Settings.Default.SmtpPort));
+                    using (SmtpClient mailClient = new MailKit.Net.Smtp.SmtpClient())
+                    {
+                        // get connection encryption and user password from setting !!! 
+                        mailClient.Connect(Properties.Settings.Default.SmtpServer, Convert.ToInt32(Properties.Settings.Default.SmtpPort), MailKit.Security.SecureSocketOptions.StartTls);
+                        mailClient.Authenticate(Properties.Settings.Default.SmtpUser, Properties.Settings.Default.SmtpPassword);
 
-                    // UseDefaultCredentials tells the mail client to use the Windows credentials of the account (i.e. user account) 
-                    // being used to run the application
-                    mailClient.UseDefaultCredentials = true;
-
-                    // the time-out value in milliseconds. The default value is 100,000 (100 seconds). 
-                    // mailClient.Timeout = 10000;
-                    
-                    // Send delivers the message to the mail server
-                    mailClient.Send(message);
+                        // Send delivers the message to the mail server
+                        mailClient.Send(message);
+                        mailClient.Disconnect(true);
+                    }
 
                 } // end using
 
@@ -225,15 +221,11 @@ namespace SmtpMailClient
                 
             }
 
-            catch (FormatException ex)
+            catch (Exception ex)
             {
-                MessageBox.Show(this, ex.Message, "Format Exeption", MessageBoxButtons.OK, MessageBoxIcon.Information); //MLHIDE
+                MessageBox.Show(this, ex.Message, "Exeption", MessageBoxButtons.OK, MessageBoxIcon.Information); //MLHIDE
             }
-            catch (SmtpException ex)
-            {
-                MessageBox.Show(this, ex.Message, "Smtp Exeption", MessageBoxButtons.OK, MessageBoxIcon.Information); //MLHIDE
-            }
-
+            
             UpdateStatusStrip();
         }
         

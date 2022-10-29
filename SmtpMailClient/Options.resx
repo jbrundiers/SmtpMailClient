@@ -117,278 +117,557 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="&gt;&gt;labelSmtpPort.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="labelSenderAddress.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 9pt</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="labelSenderAddress.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;listBoxCultures.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;btnCancel.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="tbSmtpServer.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 9pt</value>
-  </data>
-  <data name="tbSmtpServer.Size" type="System.Drawing.Size, System.Drawing">
-    <value>191, 21</value>
-  </data>
-  <data name="&gt;&gt;tbSmtpServer.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="btnOk.Location" type="System.Drawing.Point, System.Drawing">
-    <value>25, 293</value>
-  </data>
-  <data name="&gt;&gt;labelSenderAddress.ZOrder" xml:space="preserve">
-    <value>11</value>
-  </data>
-  <data name="labelSmtpServer.Size" type="System.Drawing.Size, System.Drawing">
-    <value>85, 15</value>
-  </data>
-  <data name="btnOk.Text" xml:space="preserve">
-    <value>Ok</value>
-  </data>
-  <data name="tbSenderAddress.Text" xml:space="preserve">
-    <value>testuser@areva.local</value>
-  </data>
-  <data name="&gt;&gt;tbSenderAddress.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="tbSenderAddress.Size" type="System.Drawing.Size, System.Drawing">
-    <value>193, 21</value>
-  </data>
-  <data name="cbMAPIRegister.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="tbSenderAddress.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 9pt</value>
-  </data>
-  <data name="cbMAPIRegister.Size" type="System.Drawing.Size, System.Drawing">
-    <value>89, 17</value>
-  </data>
-  <data name="labelMaxMailSize.Size" type="System.Drawing.Size, System.Drawing">
-    <value>138, 15</value>
-  </data>
-  <data name="&gt;&gt;labelSmtpPort.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tbSmtpPort.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tbSenderAddress.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="labelSmtpServer.Location" type="System.Drawing.Point, System.Drawing">
-    <value>22, 50</value>
-  </data>
-  <data name="labelSmtpServer.Text" xml:space="preserve">
-    <value>SMTP Server :</value>
-  </data>
-  <data name="labelMaxMailSize.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="labelSmtpPort.Size" type="System.Drawing.Size, System.Drawing">
-    <value>72, 15</value>
-  </data>
   <data name="tbSmtpPort.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 9pt</value>
   </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
-  </data>
-  <data name="tbSmtpPort.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
-  </data>
-  <data name="&gt;&gt;listBoxCultures.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tbMaxMailSize.Name" xml:space="preserve">
-    <value>tbMaxMailSize</value>
-  </data>
-  <data name="tbMaxMailSize.Text" xml:space="preserve">
-    <value>50</value>
-  </data>
-  <data name="tbMaxMailSize.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 9pt</value>
-  </data>
-  <data name="labelCultures.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
-    <value>CenterScreen</value>
-  </data>
-  <data name="btnOk.TabIndex" type="System.Int32, mscorlib">
-    <value>18</value>
-  </data>
-  <data name="tbMaxMailSize.TabIndex" type="System.Int32, mscorlib">
-    <value>20</value>
-  </data>
-  <data name="&gt;&gt;btnOk.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="labelSmtpServer.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="&gt;&gt;labelSenderAddress.Name" xml:space="preserve">
-    <value>labelSenderAddress</value>
-  </data>
-  <data name="&gt;&gt;tbSmtpPort.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;tbMaxMailSize.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="labelCultures.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="labelSmtpPort.Text" xml:space="preserve">
-    <value>SMTP Port :</value>
-  </data>
-  <data name="&gt;&gt;btnCancel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="listBoxCultures.TabIndex" type="System.Int32, mscorlib">
-    <value>23</value>
-  </data>
-  <data name="tbMaxMailSize.Size" type="System.Drawing.Size, System.Drawing">
-    <value>86, 21</value>
-  </data>
-  <data name="btnCancel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
-  </data>
-  <data name="&gt;&gt;cbMAPIRegister.Name" xml:space="preserve">
-    <value>cbMAPIRegister</value>
-  </data>
-  <data name="labelSmtpPort.Location" type="System.Drawing.Point, System.Drawing">
-    <value>347, 49</value>
-  </data>
-  <data name="&gt;&gt;labelSmtpPort.Name" xml:space="preserve">
-    <value>labelSmtpPort</value>
-  </data>
-  <data name="labelSmtpPort.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 9pt</value>
-  </data>
-  <data name="&gt;&gt;tbSenderAddress.Name" xml:space="preserve">
-    <value>tbSenderAddress</value>
-  </data>
-  <data name="cbMAPIRegister.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>TopCenter</value>
-  </data>
-  <data name="labelMaxMailSize.TabIndex" type="System.Int32, mscorlib">
-    <value>25</value>
-  </data>
-  <data name="&gt;&gt;cbMAPIRegister.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;labelCultures.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;labelSmtpServer.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;tbSmtpPort.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;tbSenderAddress.ZOrder" xml:space="preserve">
-    <value>12</value>
-  </data>
-  <data name="&gt;&gt;labelCultures.Name" xml:space="preserve">
-    <value>labelCultures</value>
-  </data>
-  <data name="labelCultures.TabIndex" type="System.Int32, mscorlib">
-    <value>24</value>
-  </data>
-  <data name="&gt;&gt;tbSmtpServer.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="labelSmtpPort.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
-  </data>
-  <data name="tbSmtpServer.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
-  </data>
-  <data name="cbMAPIRegister.Text" xml:space="preserve">
-    <value>register MAPI</value>
-  </data>
-  <data name="tbMaxMailSize.Location" type="System.Drawing.Point, System.Drawing">
-    <value>255, 107</value>
-  </data>
-  <data name="&gt;&gt;listBoxCultures.Name" xml:space="preserve">
-    <value>listBoxCultures</value>
-  </data>
-  <data name="&gt;&gt;labelSmtpPort.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="labelCultures.Text" xml:space="preserve">
-    <value>Language:</value>
-  </data>
-  <data name="tbSenderAddress.Location" type="System.Drawing.Point, System.Drawing">
-    <value>148, 79</value>
-  </data>
-  <data name="btnCancel.TabIndex" type="System.Int32, mscorlib">
-    <value>19</value>
-  </data>
-  <data name="&gt;&gt;labelSmtpServer.Name" xml:space="preserve">
-    <value>labelSmtpServer</value>
-  </data>
-  <data name="labelMaxMailSize.Location" type="System.Drawing.Point, System.Drawing">
-    <value>22, 110</value>
-  </data>
-  <data name="btnCancel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>445, 293</value>
-  </data>
-  <data name="tbSmtpServer.Text" xml:space="preserve">
-    <value>10.201.80.35</value>
+  <data name="tbSmtpPort.Location" type="System.Drawing.Point, System.Drawing">
+    <value>434, 43</value>
   </data>
   <data name="tbSmtpPort.Size" type="System.Drawing.Size, System.Drawing">
     <value>86, 21</value>
   </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="tbSmtpPort.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="tbSmtpPort.Text" xml:space="preserve">
+    <value>25</value>
+  </data>
+  <data name="&gt;&gt;tbSmtpPort.Name" xml:space="preserve">
+    <value>tbSmtpPort</value>
+  </data>
+  <data name="&gt;&gt;tbSmtpPort.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tbSmtpPort.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;tbSmtpPort.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="tbSmtpServer.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9pt</value>
+  </data>
+  <data name="tbSmtpServer.Location" type="System.Drawing.Point, System.Drawing">
+    <value>150, 47</value>
+  </data>
+  <data name="tbSmtpServer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>191, 21</value>
+  </data>
+  <data name="tbSmtpServer.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="tbSmtpServer.Text" xml:space="preserve">
+    <value>10.201.80.35</value>
+  </data>
+  <data name="&gt;&gt;tbSmtpServer.Name" xml:space="preserve">
+    <value>tbSmtpServer</value>
+  </data>
+  <data name="&gt;&gt;tbSmtpServer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tbSmtpServer.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;tbSmtpServer.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="labelSmtpPort.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelSmtpPort.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9pt</value>
+  </data>
+  <data name="labelSmtpPort.Location" type="System.Drawing.Point, System.Drawing">
+    <value>347, 49</value>
+  </data>
+  <data name="labelSmtpPort.Size" type="System.Drawing.Size, System.Drawing">
+    <value>72, 15</value>
+  </data>
+  <data name="labelSmtpPort.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="labelSmtpPort.Text" xml:space="preserve">
+    <value>SMTP Port :</value>
+  </data>
+  <data name="&gt;&gt;labelSmtpPort.Name" xml:space="preserve">
+    <value>labelSmtpPort</value>
+  </data>
+  <data name="&gt;&gt;labelSmtpPort.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelSmtpPort.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;labelSmtpPort.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="labelSmtpServer.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelSmtpServer.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9pt</value>
+  </data>
+  <data name="labelSmtpServer.Location" type="System.Drawing.Point, System.Drawing">
+    <value>22, 50</value>
+  </data>
+  <data name="labelSmtpServer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>85, 15</value>
+  </data>
+  <data name="labelSmtpServer.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="labelSmtpServer.Text" xml:space="preserve">
+    <value>SMTP Server :</value>
+  </data>
+  <data name="&gt;&gt;labelSmtpServer.Name" xml:space="preserve">
+    <value>labelSmtpServer</value>
+  </data>
+  <data name="&gt;&gt;labelSmtpServer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelSmtpServer.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;labelSmtpServer.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="labelSenderAddress.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelSenderAddress.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9pt</value>
+  </data>
+  <data name="labelSenderAddress.Location" type="System.Drawing.Point, System.Drawing">
+    <value>22, 82</value>
+  </data>
   <data name="labelSenderAddress.Size" type="System.Drawing.Size, System.Drawing">
     <value>97, 15</value>
   </data>
-  <data name="&gt;&gt;labelSmtpServer.Type" xml:space="preserve">
+  <data name="labelSenderAddress.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="labelSenderAddress.Text" xml:space="preserve">
+    <value>Sender address:</value>
+  </data>
+  <data name="&gt;&gt;labelSenderAddress.Name" xml:space="preserve">
+    <value>labelSenderAddress</value>
+  </data>
+  <data name="&gt;&gt;labelSenderAddress.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;labelSenderAddress.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="cbMAPIRegister.Location" type="System.Drawing.Point, System.Drawing">
-    <value>25, 142</value>
+  <data name="&gt;&gt;labelSenderAddress.ZOrder" xml:space="preserve">
+    <value>17</value>
   </data>
-  <data name="labelSenderAddress.Location" type="System.Drawing.Point, System.Drawing">
-    <value>22, 85</value>
+  <data name="tbSenderAddress.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9pt</value>
   </data>
-  <data name="&gt;&gt;btnOk.ZOrder" xml:space="preserve">
-    <value>6</value>
+  <data name="tbSenderAddress.Location" type="System.Drawing.Point, System.Drawing">
+    <value>150, 79</value>
   </data>
-  <data name="tbSmtpPort.Text" xml:space="preserve">
-    <value>25</value>
+  <data name="tbSenderAddress.Size" type="System.Drawing.Size, System.Drawing">
+    <value>193, 21</value>
   </data>
-  <data name="&gt;&gt;btnCancel.ZOrder" xml:space="preserve">
-    <value>5</value>
+  <data name="tbSenderAddress.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
   </data>
-  <data name="labelSenderAddress.Text" xml:space="preserve">
-    <value>Sender address:</value>
+  <data name="tbSenderAddress.Text" xml:space="preserve">
+    <value>testuser@areva.local</value>
   </data>
-  <data name="&gt;&gt;labelSmtpServer.ZOrder" xml:space="preserve">
-    <value>10</value>
+  <data name="&gt;&gt;tbSenderAddress.Name" xml:space="preserve">
+    <value>tbSenderAddress</value>
   </data>
-  <data name="labelMaxMailSize.Text" xml:space="preserve">
-    <value>Warning max. mail size:</value>
+  <data name="&gt;&gt;tbSenderAddress.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tbSenderAddress.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;tbSenderAddress.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="btnOk.Location" type="System.Drawing.Point, System.Drawing">
+    <value>32, 390</value>
+  </data>
+  <data name="btnOk.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="btnOk.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="btnOk.Text" xml:space="preserve">
+    <value>Ok</value>
   </data>
   <data name="&gt;&gt;btnOk.Name" xml:space="preserve">
     <value>btnOk</value>
   </data>
+  <data name="&gt;&gt;btnOk.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnOk.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnOk.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="btnCancel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>445, 390</value>
+  </data>
+  <data name="btnCancel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="btnCancel.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="btnCancel.Text" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="&gt;&gt;btnCancel.Name" xml:space="preserve">
+    <value>btnCancel</value>
+  </data>
+  <data name="&gt;&gt;btnCancel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnCancel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnCancel.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="tbMaxMailSize.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9pt</value>
+  </data>
+  <data name="tbMaxMailSize.Location" type="System.Drawing.Point, System.Drawing">
+    <value>255, 207</value>
+  </data>
+  <data name="tbMaxMailSize.Size" type="System.Drawing.Size, System.Drawing">
+    <value>86, 21</value>
+  </data>
+  <data name="tbMaxMailSize.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="tbMaxMailSize.Text" xml:space="preserve">
+    <value>50</value>
+  </data>
+  <data name="&gt;&gt;tbMaxMailSize.Name" xml:space="preserve">
+    <value>tbMaxMailSize</value>
+  </data>
+  <data name="&gt;&gt;tbMaxMailSize.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tbMaxMailSize.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;tbMaxMailSize.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="cbMAPIRegister.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="cbMAPIRegister.Location" type="System.Drawing.Point, System.Drawing">
+    <value>25, 244</value>
+  </data>
+  <data name="cbMAPIRegister.Size" type="System.Drawing.Size, System.Drawing">
+    <value>89, 17</value>
+  </data>
+  <data name="cbMAPIRegister.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="cbMAPIRegister.Text" xml:space="preserve">
+    <value>register MAPI</value>
+  </data>
+  <data name="cbMAPIRegister.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopCenter</value>
+  </data>
+  <data name="&gt;&gt;cbMAPIRegister.Name" xml:space="preserve">
+    <value>cbMAPIRegister</value>
+  </data>
+  <data name="&gt;&gt;cbMAPIRegister.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cbMAPIRegister.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;cbMAPIRegister.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="listBoxCultures.Location" type="System.Drawing.Point, System.Drawing">
+    <value>150, 285</value>
+  </data>
+  <data name="listBoxCultures.Size" type="System.Drawing.Size, System.Drawing">
+    <value>193, 95</value>
+  </data>
+  <data name="listBoxCultures.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="&gt;&gt;listBoxCultures.Name" xml:space="preserve">
+    <value>listBoxCultures</value>
+  </data>
+  <data name="&gt;&gt;listBoxCultures.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;listBoxCultures.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;listBoxCultures.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="labelCultures.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelCultures.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9pt</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="labelCultures.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="labelCultures.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 285</value>
+  </data>
+  <data name="labelCultures.Size" type="System.Drawing.Size, System.Drawing">
+    <value>66, 15</value>
+  </data>
+  <data name="labelCultures.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="labelCultures.Text" xml:space="preserve">
+    <value>Language:</value>
+  </data>
+  <data name="&gt;&gt;labelCultures.Name" xml:space="preserve">
+    <value>labelCultures</value>
+  </data>
+  <data name="&gt;&gt;labelCultures.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelCultures.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;labelCultures.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="labelMaxMailSize.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelMaxMailSize.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9pt</value>
+  </data>
+  <data name="labelMaxMailSize.Location" type="System.Drawing.Point, System.Drawing">
+    <value>22, 213</value>
+  </data>
+  <data name="labelMaxMailSize.Size" type="System.Drawing.Size, System.Drawing">
+    <value>138, 15</value>
+  </data>
+  <data name="labelMaxMailSize.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="labelMaxMailSize.Text" xml:space="preserve">
+    <value>Warning max. mail size:</value>
+  </data>
+  <data name="&gt;&gt;labelMaxMailSize.Name" xml:space="preserve">
+    <value>labelMaxMailSize</value>
+  </data>
+  <data name="&gt;&gt;labelMaxMailSize.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;labelMaxMailSize.Parent" xml:space="preserve">
     <value>$this</value>
+  </data>
+  <data name="&gt;&gt;labelMaxMailSize.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="cbConnectionEncryption.Items" xml:space="preserve">
+    <value>none</value>
+  </data>
+  <data name="cbConnectionEncryption.Items1" xml:space="preserve">
+    <value>SSL/TLS</value>
+  </data>
+  <data name="cbConnectionEncryption.Items2" xml:space="preserve">
+    <value>STARTTLS</value>
+  </data>
+  <data name="cbConnectionEncryption.Items3" xml:space="preserve">
+    <value>automatic</value>
+  </data>
+  <data name="cbConnectionEncryption.Location" type="System.Drawing.Point, System.Drawing">
+    <value>391, 151</value>
+  </data>
+  <data name="cbConnectionEncryption.Size" type="System.Drawing.Size, System.Drawing">
+    <value>129, 21</value>
+  </data>
+  <data name="cbConnectionEncryption.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="&gt;&gt;cbConnectionEncryption.Name" xml:space="preserve">
+    <value>cbConnectionEncryption</value>
+  </data>
+  <data name="&gt;&gt;cbConnectionEncryption.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cbConnectionEncryption.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;cbConnectionEncryption.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9pt</value>
+  </data>
+  <data name="label1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>388, 133</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>132, 15</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Connection Encryption:</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="tbUserName.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9pt</value>
+  </data>
+  <data name="tbUserName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>148, 122</value>
+  </data>
+  <data name="tbUserName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>193, 21</value>
+  </data>
+  <data name="tbUserName.TabIndex" type="System.Int32, mscorlib">
+    <value>29</value>
+  </data>
+  <data name="&gt;&gt;tbUserName.Name" xml:space="preserve">
+    <value>tbUserName</value>
+  </data>
+  <data name="&gt;&gt;tbUserName.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tbUserName.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;tbUserName.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="tbUserPassword.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9pt</value>
+  </data>
+  <data name="tbUserPassword.Location" type="System.Drawing.Point, System.Drawing">
+    <value>148, 152</value>
+  </data>
+  <data name="tbUserPassword.Size" type="System.Drawing.Size, System.Drawing">
+    <value>193, 21</value>
+  </data>
+  <data name="tbUserPassword.TabIndex" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="&gt;&gt;tbUserPassword.Name" xml:space="preserve">
+    <value>tbUserPassword</value>
+  </data>
+  <data name="&gt;&gt;tbUserPassword.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tbUserPassword.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;tbUserPassword.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="label2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9pt</value>
+  </data>
+  <data name="label2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>22, 122</value>
+  </data>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>68, 15</value>
+  </data>
+  <data name="label2.TabIndex" type="System.Int32, mscorlib">
+    <value>31</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>Username:</value>
+  </data>
+  <data name="&gt;&gt;label2.Name" xml:space="preserve">
+    <value>label2</value>
+  </data>
+  <data name="&gt;&gt;label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="label3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9pt</value>
+  </data>
+  <data name="label3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>22, 152</value>
+  </data>
+  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>64, 15</value>
+  </data>
+  <data name="label3.TabIndex" type="System.Int32, mscorlib">
+    <value>32</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>Password:</value>
+  </data>
+  <data name="&gt;&gt;label3.Name" xml:space="preserve">
+    <value>label3</value>
+  </data>
+  <data name="&gt;&gt;label3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>543, 436</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -2695,115 +2974,16 @@
         AAAf//////////////////////////////////////////////////////////////////////////8=
 </value>
   </data>
-  <data name="&gt;&gt;listBoxCultures.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;labelSenderAddress.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnOk.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;cbMAPIRegister.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>dlgOptions</value>
-  </data>
-  <data name="tbSenderAddress.TabIndex" type="System.Int32, mscorlib">
-    <value>14</value>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Settings</value>
   </data>
-  <data name="&gt;&gt;labelMaxMailSize.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="labelCultures.Size" type="System.Drawing.Size, System.Drawing">
-    <value>66, 15</value>
-  </data>
-  <data name="&gt;&gt;labelMaxMailSize.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="cbMAPIRegister.TabIndex" type="System.Int32, mscorlib">
-    <value>22</value>
-  </data>
-  <data name="labelCultures.Location" type="System.Drawing.Point, System.Drawing">
-    <value>22, 182</value>
-  </data>
-  <data name="&gt;&gt;cbMAPIRegister.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="labelMaxMailSize.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 9pt</value>
-  </data>
-  <data name="btnOk.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
-  </data>
-  <data name="labelSmtpServer.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 9pt</value>
-  </data>
-  <data name="&gt;&gt;tbSmtpPort.Name" xml:space="preserve">
-    <value>tbSmtpPort</value>
-  </data>
-  <data name="tbSmtpPort.Location" type="System.Drawing.Point, System.Drawing">
-    <value>434, 43</value>
-  </data>
-  <data name="labelSmtpPort.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="labelSenderAddress.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="btnCancel.Text" xml:space="preserve">
-    <value>Cancel</value>
-  </data>
-  <data name="&gt;&gt;btnCancel.Name" xml:space="preserve">
-    <value>btnCancel</value>
-  </data>
-  <data name="labelCultures.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 9pt</value>
-  </data>
-  <data name="listBoxCultures.Size" type="System.Drawing.Size, System.Drawing">
-    <value>193, 95</value>
-  </data>
-  <data name="&gt;&gt;labelCultures.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="tbSmtpServer.Location" type="System.Drawing.Point, System.Drawing">
-    <value>150, 47</value>
-  </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>539, 328</value>
-  </data>
-  <data name="listBoxCultures.Location" type="System.Drawing.Point, System.Drawing">
-    <value>148, 182</value>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>dlgOptions</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
     <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;tbMaxMailSize.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="labelSmtpServer.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;tbSmtpServer.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;labelCultures.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labelMaxMailSize.Name" xml:space="preserve">
-    <value>labelMaxMailSize</value>
-  </data>
-  <data name="&gt;&gt;tbSmtpServer.Name" xml:space="preserve">
-    <value>tbSmtpServer</value>
-  </data>
-  <data name="&gt;&gt;tbMaxMailSize.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
 </root>

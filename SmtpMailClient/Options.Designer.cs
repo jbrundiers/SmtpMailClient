@@ -42,6 +42,12 @@
             this.listBoxCultures = new System.Windows.Forms.ListBox();
             this.labelCultures = new System.Windows.Forms.Label();
             this.labelMaxMailSize = new System.Windows.Forms.Label();
+            this.cbConnectionEncryption = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.tbUserName = new System.Windows.Forms.TextBox();
+            this.tbUserPassword = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // tbSmtpPort
@@ -87,8 +93,8 @@
             // 
             // btnCancel
             // 
-            resources.ApplyResources(this.btnCancel, "btnCancel");
             this.btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            resources.ApplyResources(this.btnCancel, "btnCancel");
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.UseVisualStyleBackColor = true;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
@@ -107,9 +113,9 @@
             // 
             // listBoxCultures
             // 
-            resources.ApplyResources(this.listBoxCultures, "listBoxCultures");
             this.listBoxCultures.DisplayMember = "NativeName";
             this.listBoxCultures.FormattingEnabled = true;
+            resources.ApplyResources(this.listBoxCultures, "listBoxCultures");
             this.listBoxCultures.Name = "listBoxCultures";
             // 
             // labelCultures
@@ -123,10 +129,55 @@
             resources.ApplyResources(this.labelMaxMailSize, "labelMaxMailSize");
             this.labelMaxMailSize.Name = "labelMaxMailSize";
             // 
+            // cbConnectionEncryption
+            // 
+            this.cbConnectionEncryption.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbConnectionEncryption.FormattingEnabled = true;
+            this.cbConnectionEncryption.Items.AddRange(new object[] {
+            resources.GetString("cbConnectionEncryption.Items"),
+            resources.GetString("cbConnectionEncryption.Items1"),
+            resources.GetString("cbConnectionEncryption.Items2"),
+            resources.GetString("cbConnectionEncryption.Items3")});
+            resources.ApplyResources(this.cbConnectionEncryption, "cbConnectionEncryption");
+            this.cbConnectionEncryption.Name = "cbConnectionEncryption";
+            // 
+            // label1
+            // 
+            resources.ApplyResources(this.label1, "label1");
+            this.label1.Name = "label1";
+            // 
+            // tbUserName
+            // 
+            resources.ApplyResources(this.tbUserName, "tbUserName");
+            this.tbUserName.Name = "tbUserName";
+            // 
+            // tbUserPassword
+            // 
+            resources.ApplyResources(this.tbUserPassword, "tbUserPassword");
+            this.tbUserPassword.Name = "tbUserPassword";
+            // 
+            // label2
+            // 
+            resources.ApplyResources(this.label2, "label2");
+            this.label2.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label2.Name = "label2";
+            // 
+            // label3
+            // 
+            resources.ApplyResources(this.label3, "label3");
+            this.label3.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label3.Name = "label3";
+            // 
             // dlgOptions
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.tbUserPassword);
+            this.Controls.Add(this.tbUserName);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.cbConnectionEncryption);
             this.Controls.Add(this.labelMaxMailSize);
             this.Controls.Add(this.labelCultures);
             this.Controls.Add(this.listBoxCultures);
@@ -164,5 +215,11 @@
         private System.Windows.Forms.ListBox listBoxCultures;
         private System.Windows.Forms.Label labelCultures;
         private System.Windows.Forms.Label labelMaxMailSize;
+        private System.Windows.Forms.ComboBox cbConnectionEncryption;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox tbUserName;
+        private System.Windows.Forms.TextBox tbUserPassword;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
     }
 }
