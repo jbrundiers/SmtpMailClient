@@ -2468,4 +2468,16 @@
   <data name="$this.Text" xml:space="preserve">
     <value>Einstellungen</value>
   </data>
+  <data name="cbShowPassword.Text" xml:space="preserve">
+    <value>Passwort anzeigen</value>
+  </data>
+  <data name="gbSmtpSettings.Text" xml:space="preserve">
+    <value>SMTP Einstellungen</value>
+  </data>
+  <data name="labelSmtpPassword.Text" xml:space="preserve">
+    <value>Passwort:</value>
+  </data>
+  <data name="labelSmtpUsername.Text" xml:space="preserve">
+    <value>Benutzer:</value>
+  </data>
 </root>

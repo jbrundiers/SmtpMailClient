@@ -26,8 +26,5 @@
     <Setting Name="Culture" Type="System.String" Scope="User">
       <Value Profile="(Default)" />
     </Setting>
-    <Setting Name="SmtpEncryption" Type="System.String" Scope="User">
-      <Value Profile="(Default)">none</Value>
-    </Setting>
   </Settings>
 </SettingsFile>

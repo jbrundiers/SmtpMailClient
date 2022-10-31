@@ -33,8 +33,6 @@ using System.IO;
 using MailKit.Net.Smtp;
 using MailKit;
 using MimeKit;
-using System.Net;
-using System.Net.Sockets;
 using System.Reflection;
 using MRUList;
 
@@ -169,14 +167,16 @@ namespace SmtpMailClient
                 // exception occurs while you are calling methods on the object.
                 using ( MimeMessage message = new MimeMessage() )
                 {
-                    message.From.Add ( new MailboxAddress("Sender",Properties.Settings.Default.FromUser));
+                    //message.From.Add ( new MailboxAddress(Properties.Settings.Default.FromUser, Properties.Settings.Default.FromUser));
+                    message.From.Add( MailboxAddress.Parse(Properties.Settings.Default.FromUser));
 
                     // loop through all receivers
                     // correct syntax has been checked before
                     string[] singleAddress = this.cbReceiver.Text.Split(',');
                     for (int i = 0; i < singleAddress.GetLength(0); i++)
-                        message.To.Add(new MailboxAddress("Receiver", singleAddress[i]));
-                    
+                        //message.To.Add(new MailboxAddress("Receiver", singleAddress[i]));
+                        message.To.Add( MailboxAddress.Parse(singleAddress[i]));
+
                     message.Subject = this.tbSubject.Text;
 
                     var builder = new BodyBuilder();
@@ -200,8 +200,19 @@ namespace SmtpMailClient
                     using (SmtpClient mailClient = new MailKit.Net.Smtp.SmtpClient())
                     {
                         // get connection encryption and user password from setting !!! 
-                        mailClient.Connect(Properties.Settings.Default.SmtpServer, Convert.ToInt32(Properties.Settings.Default.SmtpPort), MailKit.Security.SecureSocketOptions.StartTls);
-                        mailClient.Authenticate(Properties.Settings.Default.SmtpUser, Properties.Settings.Default.SmtpPassword);
+
+                        // for google mail you must use OAuth 2.0 or allow in your google account.
+                        // mailClient.Connect(Properties.Settings.Default.SmtpServer, Convert.ToInt32(Properties.Settings.Default.SmtpPort), MailKit.Security.SecureSocketOptions.StartTls);
+
+                        // SecureSocketOptions.Auto: Allow the IMailService to decide which SSL or TLS options to use(default).
+                        // If the server does not support SSL or TLS, then the connection will continue without any encryption.
+                        mailClient.Connect(Properties.Settings.Default.SmtpServer, Convert.ToInt32(Properties.Settings.Default.SmtpPort), MailKit.Security.SecureSocketOptions.Auto);
+
+
+                        if (string.IsNullOrEmpty(Properties.Settings.Default.SmtpUser) == false)
+                        {
+                            mailClient.Authenticate(Properties.Settings.Default.SmtpUser, Properties.Settings.Default.SmtpPassword);
+                        }
 
                         // Send delivers the message to the mail server
                         mailClient.Send(message);

@@ -138,7 +138,7 @@ namespace SmtpMailClient.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to E-Mail send.
+        ///   Looks up a localized string similar to E-Mail sent.
         /// </summary>
         public static string RES_ID_MailSent {
             get {

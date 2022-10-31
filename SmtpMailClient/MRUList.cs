@@ -46,7 +46,7 @@ namespace MRUList
         public MRUList(string strName, int iMaxSize = 10 )
         {
             this.iMaxSize = iMaxSize;
-            this.strFilename = strName + ".MRU";                      //MLHIDE
+            this.strFilename = strName + ".MRU";                      
         }
 
         /// <summary>

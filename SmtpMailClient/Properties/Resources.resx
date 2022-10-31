@@ -124,7 +124,7 @@
     <value>Computername: </value>
   </data>
   <data name="RES_ID_MailSent" xml:space="preserve">
-    <value>E-Mail send</value>
+    <value>E-Mail sent</value>
   </data>
   <data name="RES_ID_MailSize" xml:space="preserve">
     <value>    Mail size: </value>

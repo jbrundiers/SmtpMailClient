@@ -2,16 +2,17 @@
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 using System.Resources;
+using System;
 
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("SmtpMailClient")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("using MailKit framework" + "\r\n" + "© 2013-2021 Jeffrey Stedfast")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("SoftToolware")]
 [assembly: AssemblyProduct("SmtpMailClient")]
-[assembly: AssemblyCopyright("Copyright © 2014-2017 Soft-Toolware")]
+[assembly: AssemblyCopyright("Copyright © 2014-2022 Soft-Toolware")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -30,6 +31,6 @@ using System.Resources;
 //      Build Number
 //      Revision
 //
-[assembly: AssemblyVersion("1.2.0.2")]
+[assembly: AssemblyVersion("2.0.0.0")]
 //[assembly: AssemblyFileVersion("1.0.1.1")]
 [assembly: NeutralResourcesLanguage("en-US")]

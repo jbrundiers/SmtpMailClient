@@ -45,8 +45,7 @@ namespace SmtpMailClient
 
             tbUserName.Text = Properties.Settings.Default.SmtpUser;
             tbUserPassword.Text = Properties.Settings.Default.SmtpPassword;
-
-            cbConnectionEncryption.Text = Properties.Settings.Default.SmtpEncryption;
+            tbUserPassword.UseSystemPasswordChar = true;
 
             tbSmtpPort.Text = Properties.Settings.Default.SmtpPort;
             tbSmtpServer.Text = Properties.Settings.Default.SmtpServer;
@@ -120,7 +119,6 @@ namespace SmtpMailClient
             Properties.Settings.Default.FromUser = tbSenderAddress.Text;
             Properties.Settings.Default.SmtpUser = tbUserName.Text;
             Properties.Settings.Default.SmtpPassword = tbUserPassword.Text;
-            Properties.Settings.Default.SmtpEncryption = cbConnectionEncryption.Text;
             Properties.Settings.Default.SmtpPort = tbSmtpPort.Text;
             Properties.Settings.Default.SmtpServer = tbSmtpServer.Text;
             Properties.Settings.Default.MaxMailSize = tbMaxMailSize.Text;
@@ -293,8 +291,20 @@ namespace SmtpMailClient
 
 
 
+
+
         #endregion Registry funktion to register with MAPI and MAPIhooks.dll
 
-       
+        private void cbShowPassword_CheckedChanged(object sender, EventArgs e)
+        {
+            if ( cbShowPassword.Checked)
+            {
+                tbUserPassword.UseSystemPasswordChar = false;
+            }
+            else
+            {
+                tbUserPassword.UseSystemPasswordChar = true;
+            }
+        }
     }
 }

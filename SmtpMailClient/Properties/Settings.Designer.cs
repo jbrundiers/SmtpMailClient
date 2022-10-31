@@ -118,17 +118,5 @@ namespace SmtpMailClient.Properties {
                 this["Culture"] = value;
             }
         }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("none")]
-        public string SmtpEncryption {
-            get {
-                return ((string)(this["SmtpEncryption"]));
-            }
-            set {
-                this["SmtpEncryption"] = value;
-            }
-        }
     }
 }

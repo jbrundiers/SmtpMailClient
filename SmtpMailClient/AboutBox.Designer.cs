@@ -33,6 +33,7 @@
             this.labelCopyright = new System.Windows.Forms.Label();
             this.btnOk = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.textBoxDescription = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -66,12 +67,20 @@
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.TabStop = false;
             // 
+            // textBoxDescription
+            // 
+            resources.ApplyResources(this.textBoxDescription, "textBoxDescription");
+            this.textBoxDescription.Name = "textBoxDescription";
+            this.textBoxDescription.ReadOnly = true;
+            this.textBoxDescription.TabStop = false;
+            // 
             // AboutBox
             // 
             this.AcceptButton = this.btnOk;
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btnOk;
+            this.Controls.Add(this.textBoxDescription);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnOk);
             this.Controls.Add(this.labelCopyright);
@@ -96,7 +105,6 @@
         private System.Windows.Forms.Label labelCopyright;
         private System.Windows.Forms.Button btnOk;
         private System.Windows.Forms.PictureBox pictureBox1;
-
-
+        private System.Windows.Forms.TextBox textBoxDescription;
     }
 }

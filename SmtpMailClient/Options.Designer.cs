@@ -42,12 +42,13 @@
             this.listBoxCultures = new System.Windows.Forms.ListBox();
             this.labelCultures = new System.Windows.Forms.Label();
             this.labelMaxMailSize = new System.Windows.Forms.Label();
-            this.cbConnectionEncryption = new System.Windows.Forms.ComboBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.tbUserName = new System.Windows.Forms.TextBox();
             this.tbUserPassword = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.labelSmtpUsername = new System.Windows.Forms.Label();
+            this.labelSmtpPassword = new System.Windows.Forms.Label();
+            this.cbShowPassword = new System.Windows.Forms.CheckBox();
+            this.gbSmtpSettings = new System.Windows.Forms.GroupBox();
+            this.gbSmtpSettings.SuspendLayout();
             this.SuspendLayout();
             // 
             // tbSmtpPort
@@ -129,23 +130,6 @@
             resources.ApplyResources(this.labelMaxMailSize, "labelMaxMailSize");
             this.labelMaxMailSize.Name = "labelMaxMailSize";
             // 
-            // cbConnectionEncryption
-            // 
-            this.cbConnectionEncryption.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbConnectionEncryption.FormattingEnabled = true;
-            this.cbConnectionEncryption.Items.AddRange(new object[] {
-            resources.GetString("cbConnectionEncryption.Items"),
-            resources.GetString("cbConnectionEncryption.Items1"),
-            resources.GetString("cbConnectionEncryption.Items2"),
-            resources.GetString("cbConnectionEncryption.Items3")});
-            resources.ApplyResources(this.cbConnectionEncryption, "cbConnectionEncryption");
-            this.cbConnectionEncryption.Name = "cbConnectionEncryption";
-            // 
-            // label1
-            // 
-            resources.ApplyResources(this.label1, "label1");
-            this.label1.Name = "label1";
-            // 
             // tbUserName
             // 
             resources.ApplyResources(this.tbUserName, "tbUserName");
@@ -155,29 +139,49 @@
             // 
             resources.ApplyResources(this.tbUserPassword, "tbUserPassword");
             this.tbUserPassword.Name = "tbUserPassword";
+            this.tbUserPassword.UseSystemPasswordChar = true;
             // 
-            // label2
+            // labelSmtpUsername
             // 
-            resources.ApplyResources(this.label2, "label2");
-            this.label2.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label2.Name = "label2";
+            resources.ApplyResources(this.labelSmtpUsername, "labelSmtpUsername");
+            this.labelSmtpUsername.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.labelSmtpUsername.Name = "labelSmtpUsername";
             // 
-            // label3
+            // labelSmtpPassword
             // 
-            resources.ApplyResources(this.label3, "label3");
-            this.label3.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label3.Name = "label3";
+            resources.ApplyResources(this.labelSmtpPassword, "labelSmtpPassword");
+            this.labelSmtpPassword.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.labelSmtpPassword.Name = "labelSmtpPassword";
+            // 
+            // cbShowPassword
+            // 
+            resources.ApplyResources(this.cbShowPassword, "cbShowPassword");
+            this.cbShowPassword.Name = "cbShowPassword";
+            this.cbShowPassword.UseVisualStyleBackColor = true;
+            this.cbShowPassword.CheckedChanged += new System.EventHandler(this.cbShowPassword_CheckedChanged);
+            // 
+            // gbSmtpSettings
+            // 
+            this.gbSmtpSettings.Controls.Add(this.cbShowPassword);
+            this.gbSmtpSettings.Controls.Add(this.tbSenderAddress);
+            this.gbSmtpSettings.Controls.Add(this.labelSmtpPassword);
+            this.gbSmtpSettings.Controls.Add(this.labelSenderAddress);
+            this.gbSmtpSettings.Controls.Add(this.labelSmtpUsername);
+            this.gbSmtpSettings.Controls.Add(this.labelSmtpServer);
+            this.gbSmtpSettings.Controls.Add(this.tbUserPassword);
+            this.gbSmtpSettings.Controls.Add(this.labelSmtpPort);
+            this.gbSmtpSettings.Controls.Add(this.tbUserName);
+            this.gbSmtpSettings.Controls.Add(this.tbSmtpServer);
+            this.gbSmtpSettings.Controls.Add(this.tbSmtpPort);
+            resources.ApplyResources(this.gbSmtpSettings, "gbSmtpSettings");
+            this.gbSmtpSettings.Name = "gbSmtpSettings";
+            this.gbSmtpSettings.TabStop = false;
             // 
             // dlgOptions
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.tbUserPassword);
-            this.Controls.Add(this.tbUserName);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.cbConnectionEncryption);
+            this.Controls.Add(this.gbSmtpSettings);
             this.Controls.Add(this.labelMaxMailSize);
             this.Controls.Add(this.labelCultures);
             this.Controls.Add(this.listBoxCultures);
@@ -185,16 +189,12 @@
             this.Controls.Add(this.tbMaxMailSize);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnOk);
-            this.Controls.Add(this.tbSmtpPort);
-            this.Controls.Add(this.tbSmtpServer);
-            this.Controls.Add(this.labelSmtpPort);
-            this.Controls.Add(this.labelSmtpServer);
-            this.Controls.Add(this.labelSenderAddress);
-            this.Controls.Add(this.tbSenderAddress);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "dlgOptions";
+            this.gbSmtpSettings.ResumeLayout(false);
+            this.gbSmtpSettings.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -215,11 +215,11 @@
         private System.Windows.Forms.ListBox listBoxCultures;
         private System.Windows.Forms.Label labelCultures;
         private System.Windows.Forms.Label labelMaxMailSize;
-        private System.Windows.Forms.ComboBox cbConnectionEncryption;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox tbUserName;
         private System.Windows.Forms.TextBox tbUserPassword;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label labelSmtpUsername;
+        private System.Windows.Forms.Label labelSmtpPassword;
+        private System.Windows.Forms.CheckBox cbShowPassword;
+        private System.Windows.Forms.GroupBox gbSmtpSettings;
     }
 }

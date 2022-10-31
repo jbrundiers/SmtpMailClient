@@ -34,6 +34,7 @@ namespace SmtpMailClient
             
             this.Text = AssemblyTitle;
             this.labelProductName.Text = AssemblyProduct;
+            this.textBoxDescription.Text = AssemblyDescription;
             this.labelVersion.Text = AssemblyVersion;
             this.labelCopyright.Text = AssemblyCopyright;
             #region XMAS
