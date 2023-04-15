@@ -146,7 +146,7 @@
     <value>117, 17</value>
   </data>
   <data name="cbMAPIRegister.Text" xml:space="preserve">
-    <value>MAPI-Registrierung</value>
+    <value>Registriere diese App als default Mail App</value>
   </data>
   <data name="labelCultures.Size" type="System.Drawing.Size, System.Drawing">
     <value>56, 15</value>
@@ -2479,5 +2479,11 @@
   </data>
   <data name="labelSmtpUsername.Text" xml:space="preserve">
     <value>Benutzer:</value>
+  </data>
+  <data name="cbHTMLMailbody.Text" xml:space="preserve">
+    <value>Mail in HTML Format senden</value>
+  </data>
+  <data name="gbMailSettings.Text" xml:space="preserve">
+    <value>Mail Einstellungen</value>
   </data>
 </root>

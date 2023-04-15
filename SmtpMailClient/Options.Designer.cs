@@ -48,7 +48,10 @@
             this.labelSmtpPassword = new System.Windows.Forms.Label();
             this.cbShowPassword = new System.Windows.Forms.CheckBox();
             this.gbSmtpSettings = new System.Windows.Forms.GroupBox();
+            this.cbHTMLMailbody = new System.Windows.Forms.CheckBox();
+            this.gbMailSettings = new System.Windows.Forms.GroupBox();
             this.gbSmtpSettings.SuspendLayout();
+            this.gbMailSettings.SuspendLayout();
             this.SuspendLayout();
             // 
             // tbSmtpPort
@@ -177,16 +180,30 @@
             this.gbSmtpSettings.Name = "gbSmtpSettings";
             this.gbSmtpSettings.TabStop = false;
             // 
+            // cbHTMLMailbody
+            // 
+            resources.ApplyResources(this.cbHTMLMailbody, "cbHTMLMailbody");
+            this.cbHTMLMailbody.Name = "cbHTMLMailbody";
+            this.cbHTMLMailbody.UseVisualStyleBackColor = true;
+            // 
+            // gbMailSettings
+            // 
+            this.gbMailSettings.Controls.Add(this.tbMaxMailSize);
+            this.gbMailSettings.Controls.Add(this.cbHTMLMailbody);
+            this.gbMailSettings.Controls.Add(this.labelMaxMailSize);
+            this.gbMailSettings.Controls.Add(this.cbMAPIRegister);
+            resources.ApplyResources(this.gbMailSettings, "gbMailSettings");
+            this.gbMailSettings.Name = "gbMailSettings";
+            this.gbMailSettings.TabStop = false;
+            // 
             // dlgOptions
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.gbMailSettings);
             this.Controls.Add(this.gbSmtpSettings);
-            this.Controls.Add(this.labelMaxMailSize);
             this.Controls.Add(this.labelCultures);
             this.Controls.Add(this.listBoxCultures);
-            this.Controls.Add(this.cbMAPIRegister);
-            this.Controls.Add(this.tbMaxMailSize);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnOk);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -195,6 +212,8 @@
             this.Name = "dlgOptions";
             this.gbSmtpSettings.ResumeLayout(false);
             this.gbSmtpSettings.PerformLayout();
+            this.gbMailSettings.ResumeLayout(false);
+            this.gbMailSettings.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -221,5 +240,7 @@
         private System.Windows.Forms.Label labelSmtpPassword;
         private System.Windows.Forms.CheckBox cbShowPassword;
         private System.Windows.Forms.GroupBox gbSmtpSettings;
+        private System.Windows.Forms.CheckBox cbHTMLMailbody;
+        private System.Windows.Forms.GroupBox gbMailSettings;
     }
 }

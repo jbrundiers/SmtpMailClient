@@ -312,7 +312,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btnOk.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>5</value>
   </data>
   <data name="btnCancel.Location" type="System.Drawing.Point, System.Drawing">
     <value>445, 390</value>
@@ -336,13 +336,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btnCancel.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>4</value>
   </data>
   <data name="tbMaxMailSize.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 9pt</value>
   </data>
   <data name="tbMaxMailSize.Location" type="System.Drawing.Point, System.Drawing">
-    <value>255, 207</value>
+    <value>193, 60</value>
   </data>
   <data name="tbMaxMailSize.Size" type="System.Drawing.Size, System.Drawing">
     <value>86, 21</value>
@@ -360,25 +360,25 @@
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;tbMaxMailSize.Parent" xml:space="preserve">
-    <value>$this</value>
+    <value>gbMailSettings</value>
   </data>
   <data name="&gt;&gt;tbMaxMailSize.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>0</value>
   </data>
   <data name="cbMAPIRegister.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="cbMAPIRegister.Location" type="System.Drawing.Point, System.Drawing">
-    <value>25, 244</value>
+    <value>7, 19</value>
   </data>
   <data name="cbMAPIRegister.Size" type="System.Drawing.Size, System.Drawing">
-    <value>89, 17</value>
+    <value>191, 17</value>
   </data>
   <data name="cbMAPIRegister.TabIndex" type="System.Int32, mscorlib">
     <value>22</value>
   </data>
   <data name="cbMAPIRegister.Text" xml:space="preserve">
-    <value>register MAPI</value>
+    <value>register this app as default mail app</value>
   </data>
   <data name="cbMAPIRegister.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>TopCenter</value>
@@ -390,10 +390,10 @@
     <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;cbMAPIRegister.Parent" xml:space="preserve">
-    <value>$this</value>
+    <value>gbMailSettings</value>
   </data>
   <data name="&gt;&gt;cbMAPIRegister.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>3</value>
   </data>
   <data name="listBoxCultures.Location" type="System.Drawing.Point, System.Drawing">
     <value>150, 285</value>
@@ -457,7 +457,7 @@
     <value>Microsoft Sans Serif, 9pt</value>
   </data>
   <data name="labelMaxMailSize.Location" type="System.Drawing.Point, System.Drawing">
-    <value>22, 213</value>
+    <value>6, 66</value>
   </data>
   <data name="labelMaxMailSize.Size" type="System.Drawing.Size, System.Drawing">
     <value>138, 15</value>
@@ -475,10 +475,10 @@
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;labelMaxMailSize.Parent" xml:space="preserve">
-    <value>$this</value>
+    <value>gbMailSettings</value>
   </data>
   <data name="&gt;&gt;labelMaxMailSize.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="tbUserName.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 9pt</value>
@@ -625,7 +625,7 @@
     <value>25, 12</value>
   </data>
   <data name="gbSmtpSettings.Size" type="System.Drawing.Size, System.Drawing">
-    <value>506, 179</value>
+    <value>506, 165</value>
   </data>
   <data name="gbSmtpSettings.TabIndex" type="System.Int32, mscorlib">
     <value>34</value>
@@ -643,6 +643,63 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;gbSmtpSettings.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="cbHTMLMailbody.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="cbHTMLMailbody.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="cbHTMLMailbody.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 42</value>
+  </data>
+  <data name="cbHTMLMailbody.Size" type="System.Drawing.Size, System.Drawing">
+    <value>148, 17</value>
+  </data>
+  <data name="cbHTMLMailbody.TabIndex" type="System.Int32, mscorlib">
+    <value>35</value>
+  </data>
+  <data name="cbHTMLMailbody.Text" xml:space="preserve">
+    <value>Send mail in HTML format</value>
+  </data>
+  <data name="cbHTMLMailbody.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopCenter</value>
+  </data>
+  <data name="&gt;&gt;cbHTMLMailbody.Name" xml:space="preserve">
+    <value>cbHTMLMailbody</value>
+  </data>
+  <data name="&gt;&gt;cbHTMLMailbody.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cbHTMLMailbody.Parent" xml:space="preserve">
+    <value>gbMailSettings</value>
+  </data>
+  <data name="&gt;&gt;cbHTMLMailbody.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="gbMailSettings.Location" type="System.Drawing.Point, System.Drawing">
+    <value>25, 184</value>
+  </data>
+  <data name="gbMailSettings.Size" type="System.Drawing.Size, System.Drawing">
+    <value>506, 95</value>
+  </data>
+  <data name="gbMailSettings.TabIndex" type="System.Int32, mscorlib">
+    <value>36</value>
+  </data>
+  <data name="gbMailSettings.Text" xml:space="preserve">
+    <value>Mail Settings</value>
+  </data>
+  <data name="&gt;&gt;gbMailSettings.Name" xml:space="preserve">
+    <value>gbMailSettings</value>
+  </data>
+  <data name="&gt;&gt;gbMailSettings.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;gbMailSettings.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;gbMailSettings.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">

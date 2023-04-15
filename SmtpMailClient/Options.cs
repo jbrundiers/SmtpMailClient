@@ -51,6 +51,8 @@ namespace SmtpMailClient
             tbSmtpServer.Text = Properties.Settings.Default.SmtpServer;
             tbMaxMailSize.Text = Properties.Settings.Default.MaxMailSize;
             cbMAPIRegister.Checked = Properties.Settings.Default.MAPIreg;
+            cbHTMLMailbody.Checked = Properties.Settings.Default.HTMLMailbody; 
+
 
             // uses the SupportedCultures array
             UICulture Lng = new UICulture();
@@ -123,6 +125,7 @@ namespace SmtpMailClient
             Properties.Settings.Default.SmtpServer = tbSmtpServer.Text;
             Properties.Settings.Default.MaxMailSize = tbMaxMailSize.Text;
             Properties.Settings.Default.MAPIreg = cbMAPIRegister.Checked ;
+            Properties.Settings.Default.HTMLMailbody = cbHTMLMailbody.Checked;
 
             if (listBoxCultures.SelectedItem != null)
             {

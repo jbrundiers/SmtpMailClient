@@ -12,7 +12,7 @@ using System;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("SoftToolware")]
 [assembly: AssemblyProduct("SmtpMailClient")]
-[assembly: AssemblyCopyright("Copyright © 2014-2022 Soft-Toolware")]
+[assembly: AssemblyCopyright("Copyright © 2014-2023 Soft-Toolware")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -31,6 +31,6 @@ using System;
 //      Build Number
 //      Revision
 //
-[assembly: AssemblyVersion("2.0.0.0")]
+[assembly: AssemblyVersion("2.0.0.1")]
 //[assembly: AssemblyFileVersion("1.0.1.1")]
 [assembly: NeutralResourcesLanguage("en-US")]

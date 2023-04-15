@@ -181,10 +181,11 @@ namespace SmtpMailClient
 
                     var builder = new BodyBuilder();
 
-                    // Set the plain-text version of the message text
-                    builder.TextBody = tbMailMessage.Text ;
-
-
+                    // Set the format of the message body
+                    if (Properties.Settings.Default.HTMLMailbody)      
+                        builder.HtmlBody = tbMailMessage.Text;          // Set the html-text type 
+                    else
+                        builder.TextBody = tbMailMessage.Text;          // Set the plain-text type
 
                     // loop through all attachments
                     foreach (string filename in Attachments)
