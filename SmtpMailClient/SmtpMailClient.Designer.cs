@@ -40,6 +40,9 @@ namespace SmtpMailClient
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.viewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.textToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.htmlToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.labelReceiver = new System.Windows.Forms.Label();
             this.labelSubject = new System.Windows.Forms.Label();
             this.tbSubject = new System.Windows.Forms.TextBox();
@@ -48,11 +51,11 @@ namespace SmtpMailClient
             this.AddAttachment = new System.Windows.Forms.ToolStripButton();
             this.DeleteAttachment = new System.Windows.Forms.ToolStripButton();
             this.labelMailMessage = new System.Windows.Forms.Label();
-            this.tbMailMessage = new System.Windows.Forms.TextBox();
             this.listViewAttachments = new System.Windows.Forms.ListView();
             this.cbReceiver = new System.Windows.Forms.ComboBox();
             this.btnCancel = new System.Windows.Forms.Button();
             this.btnSendMail = new System.Windows.Forms.Button();
+            this.htmlEditorMailMessage = new HtmlEditor.HtmlEditorControl();
             this.statusStrip.SuspendLayout();
             this.menuStrip.SuspendLayout();
             this.AttachmentToolStrip.SuspendLayout();
@@ -83,7 +86,8 @@ namespace SmtpMailClient
             // 
             this.menuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem,
-            this.helpToolStripMenuItem});
+            this.helpToolStripMenuItem,
+            this.viewToolStripMenuItem});
             resources.ApplyResources(this.menuStrip, "menuStrip");
             this.menuStrip.Name = "menuStrip";
             // 
@@ -132,6 +136,26 @@ namespace SmtpMailClient
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
             resources.ApplyResources(this.aboutToolStripMenuItem, "aboutToolStripMenuItem");
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
+            // 
+            // viewToolStripMenuItem
+            // 
+            this.viewToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.textToolStripMenuItem,
+            this.htmlToolStripMenuItem});
+            this.viewToolStripMenuItem.Name = "viewToolStripMenuItem";
+            resources.ApplyResources(this.viewToolStripMenuItem, "viewToolStripMenuItem");
+            // 
+            // textToolStripMenuItem
+            // 
+            this.textToolStripMenuItem.Name = "textToolStripMenuItem";
+            resources.ApplyResources(this.textToolStripMenuItem, "textToolStripMenuItem");
+            this.textToolStripMenuItem.Click += new System.EventHandler(this.textToolStripMenuItem_Click);
+            // 
+            // htmlToolStripMenuItem
+            // 
+            this.htmlToolStripMenuItem.Name = "htmlToolStripMenuItem";
+            resources.ApplyResources(this.htmlToolStripMenuItem, "htmlToolStripMenuItem");
+            this.htmlToolStripMenuItem.Click += new System.EventHandler(this.htmlToolStripMenuItem_Click);
             // 
             // labelReceiver
             // 
@@ -188,15 +212,10 @@ namespace SmtpMailClient
             this.labelMailMessage.ForeColor = System.Drawing.SystemColors.ControlText;
             this.labelMailMessage.Name = "labelMailMessage";
             // 
-            // tbMailMessage
-            // 
-            this.tbMailMessage.AcceptsReturn = true;
-            resources.ApplyResources(this.tbMailMessage, "tbMailMessage");
-            this.tbMailMessage.Name = "tbMailMessage";
-            // 
             // listViewAttachments
             // 
             this.listViewAttachments.AllowDrop = true;
+            this.listViewAttachments.HideSelection = false;
             resources.ApplyResources(this.listViewAttachments, "listViewAttachments");
             this.listViewAttachments.MultiSelect = false;
             this.listViewAttachments.Name = "listViewAttachments";
@@ -228,15 +247,24 @@ namespace SmtpMailClient
             this.btnSendMail.UseVisualStyleBackColor = true;
             this.btnSendMail.Click += new System.EventHandler(this.btnSendMail_Click);
             // 
+            // htmlEditorMailMessage
+            // 
+            this.htmlEditorMailMessage.BodyHtml = null;
+            this.htmlEditorMailMessage.BodyText = null;
+            this.htmlEditorMailMessage.DocumentText = resources.GetString("htmlEditorMailMessage.DocumentText");
+            this.htmlEditorMailMessage.Html = null;
+            resources.ApplyResources(this.htmlEditorMailMessage, "htmlEditorMailMessage");
+            this.htmlEditorMailMessage.Name = "htmlEditorMailMessage";
+            // 
             // SmtpMailClient
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btnCancel;
+            this.Controls.Add(this.htmlEditorMailMessage);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.cbReceiver);
             this.Controls.Add(this.listViewAttachments);
-            this.Controls.Add(this.tbMailMessage);
             this.Controls.Add(this.labelMailMessage);
             this.Controls.Add(this.btnSendMail);
             this.Controls.Add(this.btnClearMail);
@@ -284,12 +312,15 @@ namespace SmtpMailClient
         private System.Windows.Forms.ToolStripButton AddAttachment;
         private System.Windows.Forms.ToolStripButton DeleteAttachment;
         private System.Windows.Forms.Label labelMailMessage;
-        private System.Windows.Forms.TextBox tbMailMessage;
         private System.Windows.Forms.ListView listViewAttachments;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ComboBox cbReceiver;
         private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.ToolStripMenuItem AddresslistMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem viewToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem textToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem htmlToolStripMenuItem;
+        private HtmlEditor.HtmlEditorControl htmlEditorMailMessage;
     }
 }
 

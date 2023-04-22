@@ -117,93 +117,10 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="RES_ID_About" xml:space="preserve">
-    <value>About {0}</value>
-  </data>
-  <data name="RES_ID_Computername" xml:space="preserve">
-    <value>Computername: </value>
-  </data>
-  <data name="RES_ID_MailSent" xml:space="preserve">
-    <value>E-Mail sent</value>
-  </data>
-  <data name="RES_ID_MailSize" xml:space="preserve">
-    <value>    Mail size: </value>
-    <comment>Previous text:     Mail Größe: </comment>
-  </data>
-  <data name="RES_ID_MailTooBig" xml:space="preserve">
-    <value>E-Mail too big.</value>
-    <comment>Previous text: E-Mail zu groß.</comment>
-  </data>
-  <data name="RES_ID_NoMaxMailSize" xml:space="preserve">
-    <value>Missing value for maximal Mailsize.</value>
-    <comment>Previous text: Missing value for maximal Mailsize</comment>
-  </data>
-  <data name="RES_ID_NoReceiverAddr" xml:space="preserve">
-    <value>Missing receiver address.</value>
-    <comment>Previous text: Sie müssen eine Emfänger E-Mail Adresse angeben.</comment>
-  </data>
-  <data name="RES_ID_NoSenderAddr" xml:space="preserve">
-    <value>Missing sender address.</value>
-    <comment>Previous text: Die Absender-Adresse fehlt.</comment>
-  </data>
-  <data name="RES_ID_NoSmtpPort" xml:space="preserve">
-    <value>Missing SMTP port.</value>
-    <comment>Previous text: Die Portnummer des SMTP Servers fehlt.</comment>
-  </data>
-  <data name="RES_ID_NoSmtpServer" xml:space="preserve">
-    <value>Missing SMTP server address.</value>
-    <comment>Previous text: Die Adresse des SMTP Server fehlt.</comment>
-  </data>
-  <data name="RES_ID_ReceiverFormat" xml:space="preserve">
-    <value>Receiver address has wrong format.</value>
-    <comment>Previous text: Emfänger E-Mail Adresse hat das falsche Format.</comment>
-  </data>
-  <data name="RES_ID_SenderFormat" xml:space="preserve">
-    <value>Sender address has wrong format.</value>
-  </data>
-  <data name="RES_ID_SendingMail" xml:space="preserve">
-    <value>Sending E-Mail......</value>
-    <comment>Previous text: Sende E-Mail......</comment>
-  </data>
-  <data name="RES_ID_UNCpathNot" xml:space="preserve">
-    <value>UNC Path not supported.</value>
-    <comment>Previous text: UNC Pfade werden nicht unterstützt.</comment>
-  </data>
-  <data name="RES_ID_Version" xml:space="preserve">
-    <value>Version {0}</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="delete" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\delete.ico;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="add" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\add.ico;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="email-to-friend-png" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\email-to-friend.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="santa-hat-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\santa-hat-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="email-to-friend-ico" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\email-to-friend.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="email-to-friend-santa" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\email-to-friend-santa.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="RES_ID_CultureChange" xml:space="preserve">
-    <value>The language change will take full effect the next time you start the program.</value>
-  </data>
-  <data name="bold" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\bold.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="color" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\color.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="italic" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\italic.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="underscore" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\underscore.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
+  <metadata name="toolStrip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="contextMenuStrip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>122, 17</value>
+  </metadata>
 </root>

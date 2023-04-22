@@ -20,6 +20,7 @@
 //
 //------------------------------------------------------------------------------------------------
 
+
 using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
@@ -37,8 +38,9 @@ namespace SmtpMailClient
             //load language settings
             UICulture Lng = new UICulture();
             Lng.LoadAndActivate();
-           
+
             Application.Run(new SmtpMailClient());
+           
         }
     }
 }

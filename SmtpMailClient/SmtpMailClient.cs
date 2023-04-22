@@ -35,6 +35,7 @@ using MailKit;
 using MimeKit;
 using System.Reflection;
 using MRUList;
+using HtmlEditor;
 
 
 namespace SmtpMailClient
@@ -183,9 +184,11 @@ namespace SmtpMailClient
 
                     // Set the format of the message body
                     if (Properties.Settings.Default.HTMLMailbody)      
-                        builder.HtmlBody = tbMailMessage.Text;          // Set the html-text type 
+                        //builder.HtmlBody = tbMailMessage.Text;          // Set the html-text type 
+                        builder.HtmlBody = htmlEditorMailMessage.BodyHtml;
                     else
-                        builder.TextBody = tbMailMessage.Text;          // Set the plain-text type
+                        //builder.TextBody = tbMailMessage.Text;          // Set the plain-text type
+                        builder.TextBody = htmlEditorMailMessage.BodyText;
 
                     // loop through all attachments
                     foreach (string filename in Attachments)
@@ -249,10 +252,14 @@ namespace SmtpMailClient
             this.cbReceiver.Text = "";
            
             this.tbSubject.Text = "";
-            this.tbMailMessage.Text = "";
+
+            //this.tbMailMessage.Text = "";
+            this.htmlEditorMailMessage.Clear();
+            
 
             // Clear the listbox
             listViewAttachments.Items.Clear();
+
             // Clear the attachment list
             Attachments.Clear();
 
@@ -575,6 +582,16 @@ namespace SmtpMailClient
             }
         }
 
-  
+        private void textToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(this, htmlEditorMailMessage.BodyText);
+
+        }
+
+        private void htmlToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(this, htmlEditorMailMessage.BodyHtml);
+            
+        }
     }
 }

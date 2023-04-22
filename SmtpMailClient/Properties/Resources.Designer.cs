@@ -73,6 +73,26 @@ namespace SmtpMailClient.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap bold {
+            get {
+                object obj = ResourceManager.GetObject("bold", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap color {
+            get {
+                object obj = ResourceManager.GetObject("color", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap delete {
             get {
                 object obj = ResourceManager.GetObject("delete", resourceCulture);
@@ -106,6 +126,16 @@ namespace SmtpMailClient.Properties {
         public static System.Drawing.Bitmap email_to_friend_santa {
             get {
                 object obj = ResourceManager.GetObject("email-to-friend-santa", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap italic {
+            get {
+                object obj = ResourceManager.GetObject("italic", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -260,6 +290,16 @@ namespace SmtpMailClient.Properties {
         public static System.Drawing.Bitmap santa_hat_icon {
             get {
                 object obj = ResourceManager.GetObject("santa-hat-icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap underscore {
+            get {
+                object obj = ResourceManager.GetObject("underscore", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
